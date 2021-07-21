@@ -14,6 +14,7 @@
             <br>
             <label>Choose Ur Priority: </label>
             <select class="input" id="priority" required>
+                <option value="High" selected>All</option>
                 <option value="High" selected>High</option>
                 <option value="Medium">Medium</option>
                 <option value="Low">Low</option>
@@ -23,6 +24,7 @@
             <br>
             <div class="filterList">
                 <label>Filter Session: </label>
+                 <span class="filter" id="Low" onclick="sortList('High');myFunction1()">All</span>
                 <span class="filter" id="Low" onclick="sortList('High');myFunction1()">HIGH</span>
                 <span class="filter" id="Medium" onclick="sortList('Medium');myFunction2()">MEDIUM</span>
                 <span class="filter" id="High" onclick="sortList('Low'); myFunction3()">LOW</span>
